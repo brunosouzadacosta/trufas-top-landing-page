@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Belanosima', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    background-color: var(--white);
+}
+
+:root{
+    --brown: #694027;
+    --beige: #EADCB9;
+    --white: #F9F5EE;
+}
+.navigation{
+    width: 100%;
+    height: 10vh;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 5px #ccc;
+    position: fixed;
+    transition: all 0.5s;
+}
+.navigation h1{
+    font-family: 'Lobster', cursive;
+}
+.navigation span{
+    color: #694027;
+    font-family: 'Lobster', cursive;
+}
+.navigation ul{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    
+}
+.navigation ul li{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.navigation ul li a:hover{
+    color: var(--brown);
+}
+
+#pagina-inicial{
+    width: 100%;
+    padding: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imagem-pagina-inicial{
+    width: 100%;
+}
+
+.texto-pagina-inicial h4{
+    color: var(--brown);
+    font-size: 1.5rem;
+}
+
+.texto-pagina-inicial h1{
+    font-size: 3.5rem;
+    padding: 1rem 0;
+    
+}
+
+.texto-pagina-inicial p{
+    font-size: 1rem;
+}
+
+.texto-pagina-inicial button{
+    margin: 2rem 0;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--brown);
+    width: 15rem;
+}
+
+.texto-pagina-inicial button a{
+    color: var(--white);
+    background: var(--brown);
+    font-size: 1.5rem;
+}
+.menu{
+    cursor: pointer;
+    display: none;
+}
+.menu div{
+    width: 30px;
+    height: 3px;
+    background: var(--brown);
+    margin: 8px;
+}
+
+#sobre{
+    width: 100%;
+    padding: 7rem;
+    background-color: var(--beige);
+}
+
+#sobre h1{
+    background-color: var(--beige);
+    text-align: center;
+    padding: 1rem;
+    font-size: 3rem;
+
+}
+#sobre p{
+    background-color: var(--beige);
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+#menu{
+    width: 100%;
+    padding: 7rem 7rem 15rem;
+}
+#menu h1{
+    text-align: center;
+    font-size: 3rem;
+}
+
+
+.trufas{
+    display: flex;
+    justify-content: space-around;
+}
+.trufa{
+    height: 200px;
+    padding-top: 2rem;
+}
+.trufa img{
+    border-radius: 15px 15px 0 0;
+}
+.texto{
+    width: 300px;
+    padding-bottom: 0.75rem;
+    border-radius: 0 0 15px 15px;
+}
+
+#contato{
+    width: 100%;
+    height: 5px;
+    padding: 7rem;
+    background-color: var(--brown);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contato h1{
+    background-color: var(--brown);
+    font-size: 2em;
+    
+}
+
+#contato p{
+    background-color: var(--brown);
+    font-size: 1.25rem;
+}
+@media (max-width: 999px){
+    #pagina-inicial{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        background-color: var(--white);
+        padding: 7rem 1.5rem;
+    }
+    .texto-pagina-inicial{
+        text-align: center;
+    }
+    .texto-pagina-inicial h4{
+        font-size: 1rem;
+    }
+    .texto-pagina-inicial h1{
+        font-size: 2.5rem;
+    }
+    
+    .navigation-menu{
+        position: fixed;
+        opacity: 0;
+        top: 70px;
+        width: 50%;
+        height: 100vh;
+    }
+    .navigation-menu.ativo{
+        opacity: 1;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .menu{
+        display: block;
+    }
+    .menu.ativo .barra1{
+        transform: translateY(15px) rotate(45deg);
+    }
+    .menu.ativo .barra2{
+        opacity: 0;
+    }
+    .menu.ativo .barra3{
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .trufas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .trufa{
+        padding-bottom: 20rem;
+    }
+    #menu{
+        width: 100%;
+        padding: 7rem 7rem 0;
+    }
+}
