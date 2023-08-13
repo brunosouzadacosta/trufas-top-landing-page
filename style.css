@@ -61,7 +61,8 @@
 }
 
 .imagem-pagina-inicial{
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .texto-pagina-inicial h4{
@@ -143,6 +144,9 @@
 .trufa img{
     border-radius: 15px 15px 0 0;
 }
+trufa p{
+    font-size: 1rem;
+}
 .texto{
     width: 300px;
     padding-bottom: 0.75rem;
@@ -171,14 +175,14 @@
     background-color: var(--brown);
     font-size: 1.25rem;
 }
-@media (max-width: 999px){
+@media (max-width: 768px){
     #pagina-inicial{
         display: flex;
         flex-direction: column;
         align-items: center;
         height: 100%;
         background-color: var(--white);
-        padding: 7rem 1.5rem;
+        padding: 7rem 1.5rem 3rem 1.5rem;
     }
     .texto-pagina-inicial{
         text-align: center;
@@ -219,7 +223,12 @@
     .menu.ativo .barra3{
         transform: translateY(-7px) rotate(-45deg);
     }
-
+    #sobre{
+        padding: 3rem;
+    }
+    #sobre p{
+        font-size: 1rem;
+    }
     .trufas{
         display: flex;
         flex-direction: column;
@@ -227,9 +236,31 @@
     }
     .trufa{
         padding-bottom: 20rem;
+        padding-top: 1rem;
     }
     #menu{
-        width: 100%;
-        padding: 7rem 7rem 0;
+        padding: 3rem 0;
+    } 
+    .texto{
+        font-size: 1rem;
+    }
+
+    .img-home {
+        max-width: 100%;
+        height: auto;
+        display: block; 
+        margin: 0 auto;
+    } 
+    #contato {
+        padding: 5rem 1.5rem;
+        text-align: center;
+    }
+    
+    #contato h1 {
+        font-size: 1.5rem;
+    }
+    
+    #contato p {
+        font-size: 1rem;
     }
 }
